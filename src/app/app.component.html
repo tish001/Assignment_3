@@ -1,0 +1,9 @@
+<div class="container">
+<button class="btn btn-primary "  (click)="toggle_display()">Display details
+</button>
+<p *ngIf="secretMsg">secret password = tisha</p>
+<!-- let i=index to extract index number -->
+<p *ngFor="let item of arrOfLog, let i=index"
+ [ngStyle]="{backgroundColor: item>=5?'blue':'transparent'}"
+ [ngClass]="{'text-color':item>=5}">{{item}}</p>
+</div>
